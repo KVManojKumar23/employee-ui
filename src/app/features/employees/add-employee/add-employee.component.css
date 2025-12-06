@@ -1,0 +1,83 @@
+/* MAIN FORM CONTAINER */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px 4px;
+}
+
+/* ROW LAYOUT */
+.row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 6px 0;
+}
+
+/* COLUMN CARD STYLE */
+.col {
+  flex: 1;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px 18px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.col:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* LABEL BEAUTIFICATION */
+mat-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3f51b5 !important;
+}
+
+/* FORM FIELDS STYLE */
+mat-form-field {
+  width: 100%;
+}
+
+/* ACTION BUTTONS */
+mat-dialog-actions {
+  margin-top: 5px;
+  padding: 5px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+button {
+  margin-right: 12px;
+  min-width: 120px;
+  font-weight: 600;
+}
+
+/* BUTTON HOVER EFFECT */
+button:hover {
+  transform: translateY(-2px);
+  transition: 200ms ease;
+}
+
+/* TITLE STYLING */
+::ng-deep .mat-dialog-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #283593;
+  margin-bottom: 10px;
+}
+
+:host .mat-dialog-actions {
+  justify-content: flex-end;
+  padding: 5px 0;
+  margin: 10px 0 0 0;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .col {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,85 @@
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #3949ab, #1e88e5);
+  padding: 90px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ffeb3b;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+.hero-buttons button {
+  margin: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* FEATURES SECTION */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 300px;
+  text-align: center;
+  padding: 25px;
+}
+
+.feature-card mat-icon {
+  font-size: 48px;          /* Bigger icon */
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  display: block;
+  margin: 0 auto 12px;      /* Center icon */
+  color: #3f51b5;           /* Material primary color */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .hero-buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

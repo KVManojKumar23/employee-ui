@@ -1,0 +1,117 @@
+.emp-toolbar {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 0;
+}
+
+.actions {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.filter .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #2563eb;
+}
+
+.table-wrap.modern-table {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mat-header-cell {
+  background-color: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mat-header-row {
+  height: 56px;
+}
+
+.mat-cell {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.row-hover:hover {
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease;
+}
+
+.mat-chip.chip-gender {
+  font-size: 12px;
+  height: 24px;
+  min-height: 24px;
+  border-radius: 12px;
+}
+
+.mat-chip.chip-status {
+  font-size: 12px;
+  font-weight: 600;
+  height: 26px;
+  min-height: 26px;
+  border-radius: 13px;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.chip-status.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.mat-paginator {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  border-radius: 0 0 12px 12px;
+}
+
+button[mat-icon-button] {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+button[mat-icon-button]:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+mat-progress-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.mat-sort-header-arrow {
+  color: #6b7280;
+}

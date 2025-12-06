@@ -1,0 +1,19 @@
+.logo-section {
+  text-align: center;
+  padding: 20px 0 0;
+  color: rgb(99, 86, 218);
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+mat-nav-list a  span{
+  color: rgb(252, 250, 250)!important;
+}
+
+mat-nav-list a mat-icon {
+  margin-right: 10px;
+  color: rgb(99, 86, 218);
+}

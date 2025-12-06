@@ -1,0 +1,67 @@
+.address-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 32px 0;
+  min-width: 450px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.item strong {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.item span {
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h2[mat-dialog-title] {
+  margin: 0;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  background: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+mat-dialog-content {
+  padding: 0 24px !important;
+  background: #f8fafc;
+}
+
+mat-dialog-actions {
+  padding: 24px;
+  background: white;
+  border-top: 1px solid #f1f5f9;
+}
+
+button[mat-button] {
+  color: #64748b;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+button[mat-button]:hover {
+  background: #f1f5f9;
+  color: #475569;
+}

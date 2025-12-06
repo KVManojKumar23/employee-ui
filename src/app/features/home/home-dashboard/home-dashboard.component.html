@@ -1,0 +1,58 @@
+<div class="page-container">
+
+  <!-- Page Header -->
+  <div class="page-header mat-elevation-z2">
+    <h2>Employee Management</h2>
+    <p>Manage employees, track details, and maintain organizational records.</p>
+  </div>
+
+  <!-- Cards Row -->
+  <div class="card-row">
+
+    <!-- Total Employees -->
+    <mat-card class="stat-card">
+      <mat-icon>groups</mat-icon>
+      <h3>Employees</h3>
+      <p>{{ employeeCount }}</p>
+    </mat-card>
+
+    <!-- Departments -->
+    <mat-card class="stat-card">
+      <mat-icon>business</mat-icon>
+      <h3>Departments</h3>
+      <p>{{ departmentCount }}</p>
+    </mat-card>
+
+    <!-- Active Employees -->
+    <mat-card class="stat-card">
+      <mat-icon>check_circle</mat-icon>
+      <h3>Active</h3>
+      <p>{{ activeEmployeeCount }}</p>
+    </mat-card>
+
+  </div>
+
+  <!-- Main Content -->
+  <mat-card class="info-card">
+    <mat-card-title>About Employees</mat-card-title>
+    <mat-card-content>
+      <p>
+        Employees form the backbone of the company. This system keeps track of personal,
+        professional, and address details for each employee. Using Angular Material, we maintain a
+        clean and user-friendly interface to simplify employee record maintenance.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="info-card">
+    <mat-card-title>About Departments</mat-card-title>
+    <mat-card-content>
+      <p>
+        Departments help categorize employees based on their job role and responsibilities.
+        Examples include HR, Finance, Engineering, Sales, and Support. Modern UI components enhance clarity
+        and improve the overall navigation experience.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

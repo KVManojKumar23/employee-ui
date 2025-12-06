@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <div class="left-section"  routerLink="/">
+    <img src="assets/logo.png" class="logo" alt="Logo" />
+    <span class="title">Employee Management</span>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="align-buttons">
+    <button mat-raised-button color="primary" *ngIf="isDashboardEmployeeSection" (click)="saveEmployee()">
+      <mat-icon>add</mat-icon>
+      <span>Add Employee</span>
+    </button>
+    <button mat-raised-button color="primary" *ngIf="isDepartmentSection" (click)="saveDepatrtment()">
+      <mat-icon>add</mat-icon>
+      <span>Add Department</span>
+    </button>
+    <button mat-raised-button color="accent" [routerLink]="isDashboard ? '/' : '/dashboard'">
+      <mat-icon>{{ isDashboard ? 'arrow_back' : 'dashboard' }}</mat-icon>
+      {{ isDashboard ? 'Back' : 'Dashboard' }}
+    </button>
+  </div>
+</mat-toolbar>

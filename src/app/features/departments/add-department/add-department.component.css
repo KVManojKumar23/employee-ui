@@ -1,0 +1,54 @@
+/* Main form layout */
+.dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* Material form fields */
+mat-form-field {
+  width: 100%;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Dialog header (optional enhancement) */
+::ng-deep .mat-dialog-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+/* Smooth hover effect for buttons */
+button[mat-raised-button], button[mat-button] {
+  transition: all 0.2s ease-in-out;
+}
+
+button[mat-raised-button]:hover {
+  transform: translateY(-2px);
+}
+
+/* Optional: elevate dialog for premium look */
+::ng-deep .mat-dialog-container {
+  padding: 20px 24px;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Optional: highlight required fields */
+mat-form-field.mat-form-field-appearance-outline.mat-form-field-required .mat-form-field-outline {
+  stroke: #d32f2f;
+}
+mat-form-field.mat-form-field-appearance-outline.mat-form-field-required .mat-form-field-label {
+  color: #d32f2f;
+}
+

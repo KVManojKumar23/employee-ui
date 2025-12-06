@@ -1,0 +1,21 @@
+<mat-sidenav-container class="layout-container">
+
+  <!-- SIDE NAVIGATION COMPONENT -->
+  <mat-sidenav mode="side" opened class="sidenav">
+    <app-side-navbar></app-side-navbar>
+  </mat-sidenav>
+
+  <!-- MAIN CONTENT -->
+  <mat-sidenav-content class="content">
+
+    <!-- TOP NAVBAR -->
+    <app-navbar></app-navbar>
+
+    <!-- PAGE CONTENT LOADED DYNAMICALLY -->
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

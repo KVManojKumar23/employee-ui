@@ -1,0 +1,98 @@
+<h2 mat-dialog-title>{{ mode }} Employee</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="employeeForm" class="form-container">
+
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="col">
+
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Designation</mat-label>
+          <input matInput formControlName="designation">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="phoneNumber">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="gender">
+            <mat-option *ngFor="let g of genders" [value]="g">{{ g }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="status">
+            <mat-option *ngFor="let s of statuses" [value]="s">{{ s }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Department</mat-label>
+          <mat-select formControlName="departmentId">
+            <mat-option *ngFor="let d of departmentList" [value]="d.id">
+              {{ d.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col" formGroupName="address">
+        <mat-form-field appearance="outline">
+          <mat-label>Landmark</mat-label>
+          <input matInput formControlName="landMark">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Address 1</mat-label>
+          <input matInput formControlName="address1">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Address 2</mat-label>
+          <input matInput formControlName="address2">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <input matInput formControlName="city">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>State</mat-label>
+          <input matInput formControlName="state">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Country</mat-label>
+          <input matInput formControlName="country">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Pin</mat-label>
+          <input matInput formControlName="pin">
+        </mat-form-field>
+
+      </div>
+    </div>
+
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="closeDialog()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSubmit()">
+    {{ mode === 'Add' ? 'Save' : 'Update' }}
+  </button>
+</mat-dialog-actions>

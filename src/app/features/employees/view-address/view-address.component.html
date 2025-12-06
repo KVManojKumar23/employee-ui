@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>Employee Address</h2>
+
+<mat-dialog-content class="address-box">
+
+  <div class="item"><strong>Landmark:</strong> {{ address.landMark }}</div>
+  <div class="item"><strong>Address 1:</strong> {{ address.address1 }}</div>
+  <div class="item"><strong>Address 2:</strong> {{ address.address2 }}</div>
+  <div class="item"><strong>City:</strong> {{ address.city }}</div>
+  <div class="item"><strong>State:</strong> {{ address.state }}</div>
+  <div class="item"><strong>Country:</strong> {{ address.country }}</div>
+  <div class="item"><strong>Pin:</strong> {{ address.pin }}</div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Close</button>
+</mat-dialog-actions>
